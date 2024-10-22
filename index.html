@@ -36,10 +36,13 @@
 
     @keyframes moveText {
       0% {
-        transform: translateX(100%);
+        transform: translateX(100%); /* Start off-screen to the right */
+      }
+      10% {
+        transform: translateX(0); /* Show the text fully in view */
       }
       100% {
-        transform: translateX(-100%);
+        transform: translateX(-100%); /* Move off-screen to the left */
       }
     }
   </style>
