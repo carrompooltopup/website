@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Animation - Jubair_10948</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      overflow: hidden;
+    }
+
+    .track {
+      position: relative;
+      width: 100%;
+      height: 100px;
+      overflow: hidden;
+      background: #222;
+      border-top: 5px solid #555;
+      border-bottom: 5px solid #555;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    .train-text {
+      white-space: nowrap;
+      display: inline-block;
+      font-size: 40px;
+      color: #00ff00;
+      font-family: 'Courier New', monospace;
+      animation: moveText 10s linear infinite;
+    }
+
+    @keyframes moveText {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="track">
+  <div class="train-text">বর্তমান অফার প্রাইজ চলতেছে তাই সব কিছুর দাম কম। অর্ডার করার ১ মিনিট এর মধ্যে প্রডাক্ট না পেলে Live chat বাটনে ক্লিক করে যোগাযোগ করবেন&nbsp; | &nbsp; বর্তমান অফার প্রাইজ চলতেছে তাই সব কিছুর দাম কম। অর্ডার করার ১ মিনিট এর মধ্যে প্রডাক্ট না পেলে Live chat বাটনে ক্লিক করে যোগাযোগ করবেন &nbsp; | &nbsp; বর্তমান অফার প্রাইজ চলতেছে তাই সব কিছুর দাম কম। অর্ডার করার ১ মিনিট এর মধ্যে প্রডাক্ট না পেলে Live chat বাটনে ক্লিক করে যোগাযোগ করবেন</div>
+</div>
+
+</body>
+</html>
